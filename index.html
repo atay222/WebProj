@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <link rel="icon" href="111111.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student portfolio built with HTML only.">
+  <title>Atai's Portfolio</title>
+  <!-- Ставим тему ДО отрисовки страницы, чтобы не было мигания -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) {
+          t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        }
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="111111.png"> 
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Верхняя панель: логотип, меню, кнопка темы, бургер -->
+  <div class="site-bar">
+    <div class="site-bar__inner">
+      <a href="#top" class="brand">Atay</a>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">#About Me</a></li>
+          <li><a href="#skills">#Skills</a></li>
+          <li><a href="#works">#Works</a></li>
+          <li><a href="#contact">#Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Сменить тему">☀️</button>
+
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <header id="top" class="hero">
+    <p>Atay</p>
+    <h1>Atay is a web designer and front-end developer</h1>
+    <p>I craft responsive websites where technologies meet creativity</p>
+
+    <p1><img src="WhatsApp Image 2026-11-06 at 10.13.05.jpeg" alt="A computer with code symbols beside a cup and green mountains" width="680" height="240"></p1>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <h2># About Me</h2>
+      <p>Hello! I'm <strong>Atay</strong>, I'm a self-taught front-end developer based from Bishkek, Kyrgyzstan. I study at International Ala-Too University IT&amp;Business college.</p>
+      <p>I have been studying web development for a few months now. I'm passionate about creating beautiful and functional websites.Before college I used to study at Naryn Highschool</p>
+
+      <img src="WhatsApp Image 2026-11-06 at 10.13.05 (1).jpeg" alt="Atay" width="500">
+      <details>
+        <summary>Read more -> </summary>
+        <p>I have a strong foundation in HTML, CSS, and JavaScript. I'm also familiar with various frameworks and libraries. I'm always eager to learn and improve my skills.Nowedays I'm focusing on improving my skills in React and Node.js.In the future, i want to specialize in full-stack development.Make it happen, i should study harder than before.</p>
+      </details>
+    </section>
+    <hr>
+
+    <section class="section" id="skills">
+      <h2> # Skills</h2>
+      <table border="1">
+        <tr>
+          <th>Languages</th>
+        </tr>
+        <tr>
+          <td>TypeScript Lua Python JavaScript</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <th>Databases</th>
+        </tr>
+        <tr>
+          <td>SQLite PostgreSQL Mongo</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <th>Others</th>
+        </tr>
+        <tr>
+          <td>HTML CSS EJS SCSS REST Jinja</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <th>Tools</th>
+        </tr>
+        <tr>
+          <td>VS Code Neovim Linux Figma XFCE Arch Git Font Awesome</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <th>Frameworks</th>
+        </tr>
+        <tr>
+          <td>React Vue Disnake Discord.js Flask Express.js</td>
+        </tr>
+      </table>
+    </section>
+    <hr>
+
+    <section class="section" id="works">
+      <h2># My Work</h2>
+      <article class="project-card">
+        <table border="9">
+          <img src="Rectangle 22.png" alt="ChertNodes" width="750" height="70">
+          <tr>
+            <th>ChertNodes</th>
+            <td>HTML, CSS, JavaScript</td>
+          </tr>
+        </table>
+        <table border="9">
+          <img src="protect.png" alt="" width="650" height="50">
+          <tr>
+            <th>ProtectX</th>
+            <td>Discort anti - crash bot</td>
+          </tr>
+        </table>
+        <table border="9">
+          <img src="1212.png" alt="" width="650" height="50">
+          <tr>
+            <th>Kahoot answer Viewer</th>
+            <td>Get answer to your Kahoot questions</td>
+          </tr>
+        </table>
+        <details>
+          <summary>View more</summary>
+          <table border="9">
+            <img src="Rectangle 22.png" alt="ChertNodes" width="750" height="70">
+            <tr>
+              <th>ChertNodes</th>
+              <td>HTML, CSS, JavaScript</td>
+            </tr>
+          </table>
+          <table border="9">
+            <img src="protect.png" alt="" width="650" height="50">
+            <tr>
+              <th>ProtectX</th>
+              <td>Discort anti - crash bot</td>
+            </tr>
+          </table>
+          <table border="9">
+            <img src="1212.png" alt="" width="650" height="50">
+            <tr>
+              <th>Kahoot answer Viewer</th>
+              <td>Get answer to your Kahoot questions</td>
+            </tr>
+          </table>
+          <table border="9">
+            <img src="It.jpg" alt="" width="650" height="50">
+            <tr>
+              <th>IT bot</th>
+              <td>Multi-functional bot for IT</td>
+            </tr>
+          </table>
+        </details>
+      </article>
+    </section>
+    <hr>
+
+    <section class="section" id="contact">
+      <h2># Contacts</h2>
+      <p>Who am I</p>
+      <p>I'm interested in freelance opportunities. However, if you have other requests or questions, don't hesitate to contact me.</p>
+      <form>
+        <fieldset>
+          <table border="2">
+            <tr>
+              <th>Support me here</th>
+            </tr>
+            <tr>
+              <td>4149500120690030</td>
+            </tr>
+          </table>
+
+          <table border="2">
+            <tr>
+              <th>Message me here</th>
+            </tr>
+            <tr>
+              <td>Atay#1234</td>
+            </tr>
+            <tr>
+              <td>atays@atays-dev.ml</td>
+            </tr>
+          </table>
+
+          <p>Atay   <a href="mailto:elias@elias-dev.ml">atays@atays-dev.ml</a></p>
+
+          <div class="social-icons">
+            <a href="https://instagram.com/a1bekovichh" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://t.me/ATAYS09" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://wa.me/9967068000063" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <p1><small>WEB designer and front-end developer</small></p1>
+
+          <div class="social-links">
+            <p><small>© Copyright 2022. · Made by Atay ·</small></p>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p><a href="#top">↑ Go up</a></p>
+  </footer>
+
+  <!-- Плавающая кнопка «Наверх» -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" title="Наверх">↑</button>
+
+  
+</body>
+</html>
